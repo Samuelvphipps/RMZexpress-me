@@ -1,0 +1,25 @@
+//this is the file we are gonna run
+
+const express= require('express');
+
+//express is a function
+
+const app=express();
+                    //string is file path to public folder
+app.use(express.static('./server/public'));    
+
+   //first argument is a number, second is a function
+        //function serves as the onready function
+        //use over 3000 for these
+        // we are 'listening' on port 3000
+
+        //built in special url  'localhost'
+                //anonymous functions must be connected to a variable or passed in a function
+
+app.listen(3000, () => {
+console.log('we\'re live 💸');
+});
+
+console.log('in server.js 😄');
+
+
